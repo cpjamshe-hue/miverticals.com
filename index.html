@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MI Verticals - Building businesses, connecting markets, creating value.">
+<title>MI Verticals</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#102a43;background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,90%);margin:auto}
+
+/* Header */
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e7edf2}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:800;letter-spacing:.04em;color:#102a43}
+.logo .mi{font-size:35px;letter-spacing:-.08em;margin-right:7px}
+.logo .accent{color:#0c9aa0}
+nav{display:flex;gap:30px;font-size:14px;font-weight:600}
+nav a:hover{color:#0c9aa0}
+
+/* Hero */
+.hero{min-height:620px;display:flex;align-items:center;position:relative;overflow:hidden;
+background:
+linear-gradient(90deg,rgba(246,249,250,.98) 0%,rgba(246,249,250,.90) 43%,rgba(246,249,250,.20) 72%,rgba(10,43,65,.18) 100%),
+linear-gradient(135deg,#dcebed 0%,#f7efe6 48%,#8eb9c3 100%)}
+.hero:after{content:"";position:absolute;right:-5%;bottom:-30%;width:62%;height:75%;
+background:linear-gradient(150deg,transparent 15%,rgba(16,42,67,.72) 16%,rgba(16,42,67,.92) 55%,#0b2439 56%);
+transform:skewX(-8deg);opacity:.85}
+.hero-content{position:relative;z-index:2;padding:90px 0;max-width:760px}
+.eyebrow{font-size:12px;letter-spacing:.22em;font-weight:700;color:#168c96;margin-bottom:18px}
+h1{font-size:clamp(45px,6vw,76px);line-height:1.03;letter-spacing:-.045em;margin-bottom:25px}
+.hero p{font-size:19px;max-width:650px;color:#3d566d;margin-bottom:32px}
+.btn{display:inline-block;background:#0c9aa0;color:white;padding:14px 25px;border-radius:3px;font-size:14px;font-weight:700;letter-spacing:.04em}
+.btn:hover{background:#087c82}
+
+/* Business strip */
+.business-strip{background:#fff;box-shadow:0 8px 30px rgba(16,42,67,.08);position:relative;z-index:5}
+.pillars{display:grid;grid-template-columns:repeat(6,1fr)}
+.pillar{padding:30px 15px;text-align:center;border-right:1px solid #e6edf1}
+.pillar:last-child{border-right:0}
+.icon{font-size:30px;margin-bottom:8px}
+.pillar h3{font-size:16px;margin-bottom:4px}
+.pillar p{font-size:12px;color:#718096}
+
+/* Sections */
+.section{padding:95px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+h2{font-size:clamp(34px,4vw,50px);line-height:1.1;letter-spacing:-.035em;margin-bottom:20px}
+.copy{font-size:18px;color:#52677b;max-width:620px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.stat{background:#f5f8fa;padding:35px 25px;text-align:center;min-height:145px;display:flex;flex-direction:column;justify-content:center}
+.stat strong{font-size:29px;display:block;margin-bottom:5px}
+.stat span{font-size:13px;color:#718096}
+
+.light{background:#f5f8fa}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}
+.card{background:#fff;border:1px solid #e0e8ed;padding:30px;min-height:175px}
+.card h3{font-size:20px;margin-bottom:9px}
+.card p{color:#687b8c;font-size:15px}
+
+.companies{display:flex;flex-wrap:wrap;gap:12px;margin-top:35px}
+.company{border:1px solid #dce5ea;border-radius:30px;padding:11px 18px;font-size:14px;background:#fff}
+
+.cta{background:#102a43;color:#fff;text-align:center;padding:85px 0}
+.cta .eyebrow{color:#76c9c9}
+.cta h2{max-width:760px;margin:0 auto 28px}
+.btn.light{background:#fff;color:#102a43}
+
+footer{background:#0a1c2a;color:#aebdca;padding:28px 0;font-size:13px}
+.footer{display:flex;justify-content:space-between;gap:20px}
+
+/* Mobile */
+@media(max-width:850px){
+nav{display:none}
+.pillars{grid-template-columns:repeat(2,1fr)}
+.pillar{border-bottom:1px solid #e6edf1}
+.two,.cards{grid-template-columns:1fr;gap:35px}
+.hero{min-height:600px}
+.stats{grid-template-columns:1fr 1fr}
+.footer{flex-direction:column}
+}
+@media(max-width:500px){
+.pillars{grid-template-columns:1fr 1fr}
+.hero-content{padding:70px 0}
+.stats{grid-template-columns:1fr}
+.section{padding:70px 0}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home"><span class="mi">MI</span><span class="accent">VERTICALS</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#businesses">Our Businesses</a>
+      <a href="#companies">Our Companies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section id="home" class="hero">
+  <div class="container hero-content">
+    <div class="eyebrow">PEOPLE · PARTNERSHIPS · PROGRESS</div>
+    <h1>Building Businesses.<br>Connecting Markets.<br>Creating Value.</h1>
+    <p>A diversified business group with a focus on distribution, food, manufacturing, logistics and international trade.</p>
+    <a class="btn" href="#businesses">OUR BUSINESSES →</a>
+  </div>
+</section>
+
+<section class="business-strip">
+  <div class="container pillars">
+    <div class="pillar"><div class="icon">🛒</div><h3>FMCG</h3><p>Everyday Essentials</p></div>
+    <div class="pillar"><div class="icon">🌾</div><h3>Foods & Grains</h3><p>From Farms to Families</p></div>
+    <div class="pillar"><div class="icon">🏭</div><h3>Manufacturing</h3><p>Quality Products</p></div>
+    <div class="pillar"><div class="icon">🚚</div><h3>Logistics</h3><p>Moving Possibilities</p></div>
+    <div class="pillar"><div class="icon">🌐</div><h3>International Trade</h3><p>Bridging Markets</p></div>
+    <div class="pillar"><div class="icon">👥</div><h3>HORECA</h3><p>Supply Solutions</p></div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container two">
+    <div>
+      <div class="eyebrow">ABOUT US</div>
+      <h2>A Group Driven by Opportunity and Impact</h2>
+      <p class="copy">MI Verticals brings together businesses across FMCG distribution, foods, manufacturing, logistics and international trade. Our focus is on building strong businesses, creating value for partners and serving markets with reliability.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><strong>10+</strong><span>Business Companies</span></div>
+      <div class="stat"><strong>6</strong><span>Core Verticals</span></div>
+      <div class="stat"><strong>Global</strong><span>Market Connections</span></div>
+      <div class="stat"><strong>Growing</strong><span>For a Stronger Tomorrow</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="businesses" class="section light">
+  <div class="container">
+    <div class="eyebrow">OUR BUSINESSES</div>
+    <h2>Our Business Verticals</h2>
+    <div class="cards">
+      <article class="card"><h3>FMCG Distribution</h3><p>Wholesale and distribution of consumer products and food categories.</p></article>
+      <article class="card"><h3>Foods & Grains</h3><p>Rice, grains and food products connecting producers and markets.</p></article>
+      <article class="card"><h3>Manufacturing</h3><p>Building capabilities in food, rice, spices and related products.</p></article>
+      <article class="card"><h3>Logistics</h3><p>Supply-chain and transportation solutions connecting every stage.</p></article>
+      <article class="card"><h3>International Trade</h3><p>Connecting suppliers, customers and opportunities across borders.</p></article>
+      <article class="card"><h3>HORECA</h3><p>Supply solutions for hotels, restaurants, catering and institutions.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="companies" class="section">
+  <div class="container">
+    <div class="eyebrow">OUR COMPANIES</div>
+    <h2>Connected Businesses</h2>
+    <p class="copy">A growing network of businesses working together across markets and industries.</p>
+    <div class="companies">
+      <span class="company">CPM Store</span>
+      <span class="company">Bharath Marketing</span>
+      <span class="company">Capital Impex</span>
+      <span class="company">OPECS Supplies</span>
+      <span class="company">KingsRoutes</span>
+      <span class="company">AFQ Foods</span>
+      <span class="company">Bapu Mills & Spices</span>
+      <span class="company">ITC Trading Company</span>
+      <span class="company">Jannath Al Firdous</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <div class="container">
+    <div class="eyebrow">MI VERTICALS</div>
+    <h2>Building stronger businesses for a stronger tomorrow.</h2>
+    <a class="btn light" href="mailto:info@miverticals.com">CONTACT US →</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer">
+    <span>© 2026 MI Verticals. All rights reserved.</span>
+    <span>Home · About · Businesses · Companies · Contact</span>
+  </div>
+</footer>
+
+</body>
+</html>
